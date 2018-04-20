@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app import views
-urlpatterns = [
-    path('users/',views.user,name='user' ),
+app_name = 'app'
+urlpatterns=[
+    path('register/$',views.register,name='register'),
+    path('user_login/$',views.user_login,name='user_login'),
 ]
